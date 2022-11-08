@@ -1,0 +1,12 @@
+{
+  "name": "minimum-finance-audit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nrgbistro/minimum-finance-audit.git",
+  "author": "Nolan Gelinas <nolangelinas@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "hardhat": "^2.12.2",
+    "solidity": "^0.0.1"
+  }
+}
