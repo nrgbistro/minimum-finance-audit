@@ -6,8 +6,18 @@
   "author": "Nolan Gelinas <nolangelinas@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@nomiclabs/hardhat-web3": "^2.0.0",
     "@openzeppelin/contracts": "^4.7.3",
+    "@openzeppelin/hardhat-upgrades": "^1.21.0",
+    "chai": "^4.3.7",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.7.2",
     "hardhat": "^2.12.2",
-    "solidity": "^0.0.1"
+    "hardhat-gas-reporter": "^1.0.9",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-rc.1",
+    "solc": "^0.8.17",
+    "solidity": "^0.0.1",
+    "web3": "^1.8.0"
   }
 }
