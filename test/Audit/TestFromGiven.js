@@ -134,6 +134,10 @@ describe(FANTOHM_TEST_FLAG + " Strategy Control Functions", function () {
 	});
 
 	it("Exploit", async function () {
+		console.log(await stakedFhm.balanceOf(deployer.address));
+		await stakedFhm.transfer(keeper.address, ethers.utils.parseEther("10"));
+		console.log(await stakedFhm.balanceOf(keeper.address));
+		console.log(await stakedFhm.balanceOf(other.address));
 		await vault.depositAll();
 		console.log(
 			ethers.utils.formatEther(await vault.balanceOf(deployer.address))
@@ -141,5 +145,6 @@ describe(FANTOHM_TEST_FLAG + " Strategy Control Functions", function () {
 		console.log(
 			"vault bal in sFHM: " + ethers.utils.formatUnits(await vault.balance(), 9)
 		);
+		console.log(await strategy.deposit());
 	});
 });
