@@ -113,26 +113,24 @@ describe(FANTOHM_TEST_FLAG + " Strategy Control Functions", function () {
 			stakingHelperAddr: FHM_STAKER,
 			circulatingSupplyAddr: FHM_CIRCULATING_SUPPLY,
 		}));
-		console.log("FHM value: " + fhm)(
-			({
-				vault,
-				strategy,
-				rebaseTokenBalStart,
-				daiValueInitial,
-				deployer,
-				keeper,
-				other,
-			} = await beforeEachHook({
-				contractNames,
-				vaultConfig,
-				stratConfig,
-				unirouter,
-				rebaseToken: fhm,
-				whale,
-				stakedRebaseToken: stakedFhm,
-				fundStaked: true,
-			}))
-		);
+		({
+			vault,
+			strategy,
+			rebaseTokenBalStart,
+			daiValueInitial,
+			deployer,
+			keeper,
+			other,
+		} = await beforeEachHook({
+			contractNames,
+			vaultConfig,
+			stratConfig,
+			unirouter,
+			rebaseToken: fhm,
+			whale,
+			stakedRebaseToken: stakedFhm,
+			fundStaked: true,
+		}));
 	});
 
 	it("Can pause so that users can only withdraw and then unpause", async function () {
